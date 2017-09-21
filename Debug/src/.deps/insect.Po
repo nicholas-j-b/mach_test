@@ -91,7 +91,7 @@ insect.o: /home/nicholas/anjuta-ws/mach_test/src/insect.cc \
  /usr/include/c++/5/bits/locale_facets.tcc \
  /usr/include/c++/5/bits/basic_ios.tcc \
  /usr/include/c++/5/bits/ostream.tcc /usr/include/c++/5/istream \
- /usr/include/c++/5/bits/istream.tcc
+ /usr/include/c++/5/bits/istream.tcc /usr/include/c++/5/cmath
 
 /usr/include/stdc-predef.h:
 
@@ -330,3 +330,5 @@ insect.o: /home/nicholas/anjuta-ws/mach_test/src/insect.cc \
 /usr/include/c++/5/istream:
 
 /usr/include/c++/5/bits/istream.tcc:
+
+/usr/include/c++/5/cmath:

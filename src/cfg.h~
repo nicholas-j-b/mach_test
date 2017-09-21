@@ -18,7 +18,7 @@ namespace CFG
 	const int NUM_OF_SENSORS = 5;
 	const int NUM_OF_OUTPUTS = 3;
 	const int NUM_LAYER_1_NODES = 4;
-	const int BRAIN_ARRAY_LENGTH = NUM_OF_SENSORS * NUM_OF_LAYER_1_NODES + NUM_OF;
+	const int BRAIN_ARRAY_LENGTH = NUM_OF_SENSORS * NUM_LAYER_1_NODES + NUM_LAYER_1_NODES * NUM_OF_OUTPUTS;
 	const float SENSOR_LENGTH = 50;
 	const float DIRECTION_WEAKENER = 100;
 	const float SPEED_ADJUST = .3;
@@ -47,8 +47,8 @@ namespace CFG
 	const int HEADER_INFO_LENGTH = 3;
 
 	//main
-	const int STARTING_POINT = 250;
-	const bool INSTANT_START = true;
+	const int STARTING_POINT = 100;
+	const bool INSTANT_START = false;
 }
 
 #endif //_CFG_H_

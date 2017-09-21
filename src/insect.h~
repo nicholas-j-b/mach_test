@@ -29,7 +29,7 @@ class Insect
 {
 public:
 	 Insect(int seed); //init random
-	 //Insect(std::string brain_file); //init from file
+	 Insect(float* file); //init from file
 	 //Insect(std::string brain_file, bool child) //init child from parent file
 	 virtual ~Insect();
 
@@ -39,15 +39,19 @@ public:
 
 	 void set_sensorDistanceArray(int j, float val) {sensorDistanceArray[j] = val;}
 
+	 //neural configs
+	 void make_decision();
+	 void calc_layers();
 
 	 //maths
 	 float get_random_float_0_1();
 	 float get_random_float_minus_1_1();
+	 void act_signed_root(float& x)
 
 	 //misc
 	 void set_sensor(int sensorId);
 	 float get_sensorPos(int sensorId, int x);
-	 void make_decision();
+
 	 void move();
 	 void kill(int track, float dist);
 	 int get_restingTrack() { return restingTrack;}

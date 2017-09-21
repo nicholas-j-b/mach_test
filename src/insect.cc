@@ -19,6 +19,7 @@
 
 #include "insect.h"
 #include <iostream>
+#include <cmath>
 
 
 Insect::Insect(int seed):
@@ -85,7 +86,44 @@ void Insect::make_decision()
 
 void Insect::calc_layers()
 {
-	//here we are in the nnbrain branch
+	float lay_1[4] = {0.0f, 0.0f, 0.0f, 0.0f};
+	float output[3] = {0.0f, 0.0f, 0.0f};
+
+	//first layer
+	for (int i = 0; i < CFG::NUM_OF_SENSORS; i++)
+	{
+		for (int j = 0; j < CFG::NUM_LAYER_1_NODES; j++)
+		{
+			lay_1[j] += /*input*/ sensorDistanceArray[i] * /*connection*/ brain[(i * CFG::NUM_LAYER_1_NODES) + j];
+		}
+	}
+	for (int i = 0; i < CFG::NUM_LAYER_1_NODES; i++)
+	{
+		act_signed_root(lay_1[i]);
+	}
+
+	//second layer
+	for (int i = 0; i < CFG::NUM_LAYER_1_NODES; i++)
+	{
+		for (int j = 0; j < CFG::NUM_OF_OUTPUTS; j++)
+		{
+			output[j] += /*input*/ lay_1[i] * /*connection*/ brain[CFG::NUM_OF_SENSORS * CFG::NUM_LAYER_1_NODES + (i * CFG::NUM_OF_OUTPUTS) + j];
+		}
+	}
+	direction += (output[0] - output[1]) / CFG::DIRECTION_WEAKENER;
+	speed += output[2] * CFG::SPEED_ADJUST;
+}
+
+void Insect::act_signed_root(float& x)
+{
+	if (x >= 0)
+	{
+		x = sqrt(x);
+	}
+	else
+	{
+		x = -sqrt(-x);
+	}
 }
 
 void Insect::move()

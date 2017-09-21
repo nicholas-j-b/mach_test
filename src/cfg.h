@@ -24,7 +24,7 @@ namespace CFG
 	const float SPEED_ADJUST = .3;
 
 	//environment characteristics
-	const int NUM_INSECTS_IN_TEST = 150;
+	const int NUM_INSECTS_IN_TEST = 250;
 	const int NUM_TRACK_PIECES = 21;
 	const int TRACK_LENGTH_LIMIT = 10000;
 	const int TRACK_DEVIATION = 250;
@@ -48,7 +48,7 @@ namespace CFG
 
 	//main
 	const int STARTING_POINT = 250;
-	const bool INSTANT_START = true;
+	const bool INSTANT_START = false;
 }
 
 #endif //_CFG_H_

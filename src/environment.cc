@@ -95,7 +95,7 @@ bool Environment::update()
 		}
 
 		//make a decision - set velocity, direction etc
-		batch[i].make_decision();
+		batch[i].calc_layers();
 		
 		//act - move insect
 		batch[i].move();

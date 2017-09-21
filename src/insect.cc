@@ -98,7 +98,7 @@ void Insect::make_decision()
 
 void Insect::calc_layers()
 {
-	
+	//testing the branching
 }
 
 void Insect::move()

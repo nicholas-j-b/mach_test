@@ -3,7 +3,7 @@ Maximized=1
 Geometry=1680x1026+0+24
 
 [File Loader]
-Files=../../src/main.cc#81%%%../../src/environment.h#37%%%../../src/environment.cc#81%%%../../src/cfg.h#22%%%../../src/insect.h#26%%%../../src/insect.cc#88%%%../../src/track.h#33%%%../../src/track.cc#28%%%../../src/to-do#5
+Files=../../src/main.cc#62%%%../../src/environment.h#37%%%../../src/environment.cc#258%%%../../src/cfg.h#50%%%../../src/insect.h#49%%%../../src/insect.cc#83%%%../../src/track.h#33%%%../../src/track.cc#29%%%../../src/to-do#5
 
 [Document Manager]
 bookmarks=<?xml version="1.0" encoding="UTF-8"?>\n<bookmarks/>\n
@@ -17,6 +17,9 @@ Working directories=../../.
 Shortcut=mach_test//src//mach_test
 Expand=mach_test%%%mach_test//src%%%mach_test//src//mach_test
 
+[Debugger]
+Stop at beginning=2
+
 [Build]
 Configuration list=1:Default:%%%1:Debug:Debug%%%1:Profiling:Profiling%%%1:Optimized:Optimized%%%1:MinGW32:MinGW32
 Selected Configuration=Debug
@@ -24,6 +27,3 @@ BuildArgs/Default=--enable-maintainer-mode
 BuildArgs/Debug=--enable-maintainer-mode 'CFLAGS=-g -O0' 'CXXFLAGS=-g -O0' 'JFLAGS=-g -O0' 'FFLAGS=-g -O0'
 BuildArgs/Profiling=--enable-maintainer-mode 'CFLAGS=-g -pg' 'CXXFLAGS=-g -pg' 'JFLAGS=-g -pg' 'FFLAGS=-g -pg'
 BuildArgs/Optimized=--enable-maintainer-mode 'CFLAGS=-O2' 'CXXFLAGS=-O2' 'JFLAGS=-O2' 'FFLAGS=-O2'
-
-[Debugger]
-Stop at beginning=2

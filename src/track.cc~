@@ -25,7 +25,8 @@
 
 Track::Track()
 {
-	semi_circle_jaggered ();
+	up_down ();
+	std::cout<<"track constructor"<<std::endl;
 }
 
 void Track::semi_circle_jaggered()

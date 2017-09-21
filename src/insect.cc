@@ -98,7 +98,7 @@ void Insect::make_decision()
 
 void Insect::calc_layers()
 {
-	
+	//here we are in the master branch
 }
 
 void Insect::move()

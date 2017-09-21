@@ -96,9 +96,9 @@ void Insect::make_decision()
 	speed += decisionArray[2] * CFG::SPEED_ADJUST;
 }
 
-void Insect::calc_next_layer()
+void Insect::calc_layers()
 {
-	for(
+	
 }
 
 void Insect::move()

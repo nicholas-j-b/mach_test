@@ -3,7 +3,7 @@ Maximized=1
 Geometry=1680x1026+0+24
 
 [File Loader]
-Files=../../src/main.cc#72%%%../../src/environment.h#37%%%../../src/environment.cc#184%%%../../src/cfg.h#29%%%../../src/insect.h#26%%%../../src/insect.cc#34%%%../../src/track.h#33%%%../../src/track.cc#28%%%../../src/to-do#7
+Files=../../src/main.cc#81%%%../../src/environment.h#37%%%../../src/environment.cc#81%%%../../src/cfg.h#22%%%../../src/insect.h#26%%%../../src/insect.cc#88%%%../../src/track.h#33%%%../../src/track.cc#28%%%../../src/to-do#5
 
 [Document Manager]
 bookmarks=<?xml version="1.0" encoding="UTF-8"?>\n<bookmarks/>\n

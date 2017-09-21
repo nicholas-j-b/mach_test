@@ -29,13 +29,9 @@ posXY{0, 0},
 decisionArray{0, 0, 0}
 {
 	srand(seed);
-	for (int i = 0; i < CFG::BRAIN_ARRAY_LENGTH - CFG::NUM_OF_SENSORS; i++)
+	for (int i = 0; i < CFG::BRAIN_ARRAY_LENGTH; i++)
 	{
 		brain[i] = get_random_float_minus_1_1();
-	}
-	for (int i = 0; i < CFG::NUM_OF_SENSORS; i++)
-	{
-		brain[CFG::BRAIN_ARRAY_LENGTH - i] = get_random_float_0_1();
 	}
 	//print_brain();
 }
@@ -47,18 +43,9 @@ direction(0),
 posXY{0, 0},
 decisionArray{0, 0, 0}
 {
-	for (int i = 0; i < CFG::BRAIN_ARRAY_LENGTH - CFG::NUM_OF_SENSORS; i++)
+	for (int i = 0; i < CFG::BRAIN_ARRAY_LENGTH; i++)
 	{
 		brain[i] = file[i];
-	}
-	for (int i = 0; i < CFG::NUM_OF_SENSORS; i++)
-	{
-		float temp = file[i];
-		if ( abs(temp) < .1)
-		{
-			temp = .1;
-		}
-		brain[CFG::BRAIN_ARRAY_LENGTH - i] = temp;
 	}
 }
 
@@ -98,7 +85,7 @@ void Insect::make_decision()
 
 void Insect::calc_layers()
 {
-	//testing the branching
+	//here we are in the nnbrain branch
 }
 
 void Insect::move()

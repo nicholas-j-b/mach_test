@@ -36,7 +36,7 @@
         <paned orientation="horizontal" resize="yes" locked="no" iconified="no" closed="no" position="937">
           <paned orientation="horizontal" resize="yes" locked="no" iconified="no" closed="no" position="779">
             <item name="AnjutaTerminal" orientation="vertical" resize="yes" locked="no" iconified="no" closed="no"/>
-            <item name="AnjutaMessageView" orientation="vertical" resize="yes" locked="no" iconified="no" closed="no"/>
+            <item name="AnjutaMessageView" orientation="vertical" resize="yes" locked="no" iconified="no" closed="yes"/>
           </paned>
           <notebook orientation="vertical" resize="yes" locked="no" iconified="no" closed="yes" page="-1">
             <item name="AnjutaDebuggerStack" orientation="horizontal" resize="yes" locked="no" iconified="no" closed="yes"/>

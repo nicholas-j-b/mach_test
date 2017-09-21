@@ -17,7 +17,8 @@ namespace CFG
 	//insect characteristics
 	const int NUM_OF_SENSORS = 5;
 	const int NUM_OF_OUTPUTS = 3;
-	const int BRAIN_ARRAY_LENGTH = NUM_OF_OUTPUTS * NUM_OF_SENSORS;
+	const int NUM_LAYER_1_NODES = 4;
+	const int BRAIN_ARRAY_LENGTH = NUM_OF_SENSORS * NUM_OF_LAYER_1_NODES + NUM_OF;
 	const float SENSOR_LENGTH = 50;
 	const float DIRECTION_WEAKENER = 100;
 	const float SPEED_ADJUST = .3;
@@ -26,7 +27,7 @@ namespace CFG
 	const int NUM_INSECTS_IN_TEST = 150;
 	const int NUM_TRACK_PIECES = 21;
 	const int TRACK_LENGTH_LIMIT = 10000;
-	const int TRACK_DEVIATION = 100;
+	const int TRACK_DEVIATION = 250;
 
 	//evolution characteristics
 	const int NUM_BREEDING_INSECTS = NUM_INSECTS_IN_TEST / 4;

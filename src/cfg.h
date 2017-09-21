@@ -17,7 +17,8 @@ namespace CFG
 	//insect characteristics
 	const int NUM_OF_SENSORS = 5;
 	const int NUM_OF_OUTPUTS = 3;
-	const int BRAIN_ARRAY_LENGTH = NUM_OF_OUTPUTS * NUM_OF_SENSORS;
+	const int NUM_LAYER_1_NODES = 4;
+	const int BRAIN_ARRAY_LENGTH = NUM_OF_SENSORS * NUM_LAYER_1_NODES + NUM_LAYER_1_NODES * NUM_OF_OUTPUTS;
 	const float SENSOR_LENGTH = 50;
 	const float DIRECTION_WEAKENER = 100;
 	const float SPEED_ADJUST = .3;
